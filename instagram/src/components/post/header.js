@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
