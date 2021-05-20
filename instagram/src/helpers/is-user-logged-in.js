@@ -7,11 +7,11 @@ export default function IsUserLoggedIn({ user, loggedInPath, children, ...rest }
     <Route
       {...rest}
       render={({ location }) => {
-        if (user) {
+        if (!user) {
           return children;
         }
 
-        if (!user) {
+        if (user) {
           return (
             <Redirect
               to={{
